@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_margin="10dp"
+    android:weightSum="4">
+<com.google.android.material.imageview.ShapeableImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_loginscreen"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:hint=" Username"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_below="@id/et_username"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_loginscreen"
+        android:hint=" Password"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/et_ForgotPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_password"
+        android:text="Forgot Password?"/>
+
+    <TextView
+        android:id="@+id/tv_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_ForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_loginscreen"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=" Sign In"
+        android:textColor="@color/blue2"
+        android:textSize="15dp" />
+        <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+            android:text="Login"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/et_username"
+            android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
+
+
